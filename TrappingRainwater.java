@@ -11,7 +11,7 @@ public class TrappingRainwater {
         }
         TrappingRainwater ob=new TrappingRainwater();
         int ans=ob.trapped(height);
-        System.out.println("Total water trapped is6 : \n"+ans6);
+        System.out.println("Total water trapped is6 : \n"+ans);
     }
     int trapped(int[] height){
         int n=height.length;
