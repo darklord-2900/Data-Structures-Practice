@@ -15,14 +15,14 @@ public class insersort {
         }
     }
     void isort(int[] ar){
-        for (int i = 0; i < ar.length; i++) {
+        for (int i = 1; i < ar.length; i++) {
             int j=i-1;
             int b=ar[i];
-            while(j>0&&b<=ar[j]){
+            while(j>=0 && b<ar[j]){
                 ar[j+1]=ar[j];
                 j -=1;
-                ar[j+1]=b;
             }
+            ar[j+1]=b;
         }
         for (int i = 0; i < ar.length; i++) {
             System.out.println(ar[i]+" ");
